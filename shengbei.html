@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″ />   
+<title>圣杯布局</title> 
+<style type="text/css"> 
+body{  
+margin:0;padding:0;
+background-image:url(http://a1.qpic.cn/psb?/V12qoWPg3dGipT/4im6jL4BRbqchiPs6dg.OF*KANDKBYrt*iOiq2AvFng!/b/dHEBAAAAAAAA&bo=*gF9AgAAAAAFB6Q!&rf=viewer_4);
+font-family:Microsoft YaHei;font-size:1.5em;color:white;
+text-align:center;		
+}     
+#container{  
+padding-left: 0;padding-right: 8em;padding-top:3em;		
+overflow: hidden; 		
+}  
+#container .column{  
+position: relative;  
+float: left;  
+}  
+#center{  
+background:black;  
+padding:0;   
+margin:0 ;  
+width: 100%;  
+min-height: 300px;  
+overflow:visible;  
+}  
+#left{  
+width:8em;  
+background:gray;  
+margin-left:-100%;  
+right: 0; /*180+60(padding total)+ 30(margin)*/  
+padding:0; /* LC fullwidth + CC padding */  
+min-height: 300px;  
+}  
+#right{  
+width: 8em; 
+background:gray;  
+padding: 0;  
+margin-right:-8em; /*fullwidth  + center column padding 尽量大一点，chrome浏览器下，这个div浮动不上来*/  
+min-height: 300px;  
+}    
+</style>  
+</head>  
+  
+<body>   
+<div id="container">  
+<div id="center" class="column">中</div>  
+<div id="left" class="column">左</div>  
+<div id="right" class="column">右</div>      
+</div> 
+</body>  
+</html> 
